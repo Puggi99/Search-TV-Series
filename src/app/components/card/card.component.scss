@@ -1,0 +1,22 @@
+
+.card{
+  width: max-content;
+  height: max-content;
+  img{
+    max-width: 30vw;
+    max-height: 30vw;
+  }
+}
+.subtitles{
+  font-weight: 500 ;
+  font-size: large;
+  color: red;
+  padding-right: 30px
+}
+
+.card-content{
+  display: flex;
+  flex-direction: row;
+}
+
+

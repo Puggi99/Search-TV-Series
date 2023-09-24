@@ -1,0 +1,19 @@
+<mat-card class="card" *ngIf="anime">
+
+  <mat-card-title> {{anime.title}}</mat-card-title>
+
+  <mat-card-content class="card-content">
+    <div class="subtitles">Aired:</div> {{anime.aired.from}}
+  </mat-card-content>
+
+    <mat-card-content class="card-content">
+      <div class="subtitles">Ended</div>
+      <div *ngIf="anime.aired.to; else continue">{{anime.aired.to}}</div>
+      <ng-template #continue>In corso</ng-template>
+    </mat-card-content>
+
+      <img [src]="anime.images.jpg.image_url" alt="{{ anime.title }}" class="anime-image">
+
+  </mat-card>
+
+

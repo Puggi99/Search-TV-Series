@@ -1,0 +1,5 @@
+<mat-grid-list class="card-container" cols="3">
+  <mat-grid-tile *ngFor="let anime of animeList">
+    <app-card [anime]="anime"></app-card>
+  </mat-grid-tile>
+</mat-grid-list>
